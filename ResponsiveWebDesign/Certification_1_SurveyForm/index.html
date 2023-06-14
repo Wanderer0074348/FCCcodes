@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome to my survey form.</p>
+    <main>
+      <form id="survey-form" action="#">
+        <label for="name" id="name-label"
+          ><p>Name: </p>
+          <input type="text" id="name" placeholder="lorem ipsum" required />
+        </label>
+        <label for="email" id="email-label"
+          ><p>Email: </p>
+          <input
+            type="email"
+            id="email"
+            placeholder="lorem ipsum"
+            required
+          />
+        </label>
+        <label for="age" id="number-label"
+          ><p>Age<em>(optional)</em>:</p>
+          <input
+            type="number"
+            id="number"
+            placeholder="35"
+            min="18"
+            max="120"
+          />
+        </label>
+        <label for="interest" id="interest-label"
+          ><p>What position do you play/like? </p>
+          <select id="dropdown">
+            <option id="select">select-one</option>
+            <option id="attacking">attacking</option>
+            <option id="defending">defending</option>
+            <option id="midfield">midfield</option>
+            <option id="goalkeeping">goalkeeping</option>
+          </select>
+        </label>
+        <p>Do you play football professionally?</p>
+        <label for="yes">
+          <input
+            id="yes"
+            type="radio"
+            name="profession"
+            value="yes"
+          />Yes
+        </label>
+        <label for="no">
+          <input
+            id="no"
+            type="radio"
+            name="profession"
+            value="no"
+          />No
+        </label>
+        <label for="sunday-league">
+          <input id="sunday-league" type="radio" name="profession" value="sunday-league" />Sunday-league
+        </label>
+        <p>Which player do you like?</p>
+        <label for="ronaldo">
+          <input
+            id="ronaldo"
+            type="checkbox"
+            name="player"
+            value="ronaldo"
+          />Ronaldo
+        </label>
+        <label for="Messi">
+          <input
+            id="Messi"
+            type="checkbox"
+            name="player"
+            value="Messi"
+          />Messi
+        </label>
+        <label for="other">
+          <input
+            id="other"
+            type="checkbox"
+            name="player"
+            value="other"
+          />Other-player
+        </label>
+        <p>How did you come about liking football?</p>
+        <textarea id="additional-information" rows="4" cols="50">
+        tell us why you like football.</textarea
+        >
+        <p>
+          <em>
+            Thank you for sharing your hobbies with us.
+          </em>
+        </p>
+        <input type="Submit" id="submit">
+      </form>
+    </main>
+  </body>
+</html>
